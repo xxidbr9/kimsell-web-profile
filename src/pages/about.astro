@@ -1,23 +1,21 @@
 ---
+import "../assets/css/global.css";
 import { SEO } from "astro-seo";
+import AboutPage from "src/layouts/about";
+
 ---
 
 <html lang='en'>
   <head>
-    <SEO
-      title='Astro SEO'
-      description='Astro SEO is a SEO component for Astro'
-      canonical='https://astro-seo.netlify.app/'
-      twitter={{
-        site: "@astro-seo",
-      }}
-    />
+    <SEO title='Kimsell ' description='' canonical='' />
     <meta charset='utf-8' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <link rel='icon' type='image/favicon' href='/favicon.ico' />
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
   </head>
   <body>
-    <h1>Astro</h1>
+    <!-- React Goes Here -->
+    <AboutPage client:only="react"/>
+    <!-- React End Here -->
   </body>
 </html>
