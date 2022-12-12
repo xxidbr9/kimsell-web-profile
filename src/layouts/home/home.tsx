@@ -240,7 +240,7 @@ const ContactUsSection = () => {
           Want to know more...?
         </h1>
         <a href="/contact">
-          <Button variant='secondary'>
+          <Button variant='tarsier'>
             Contact Us
           </Button>
         </a>
