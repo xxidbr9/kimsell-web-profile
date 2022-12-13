@@ -8,12 +8,14 @@ import homeImage1 from '../../assets/images/content/Home-1.png';
 import homeImage2 from '../../assets/images/content/Home-2.png';
 import homeImage3 from '../../assets/images/content/Home-3.png';
 import homeImage4 from '../../assets/images/content/Home_big.png';
+import ContactUsSection from '@components/contact-us'
+import FooterSection from '@components/footer'
 
 
 type Props = {}
 
 
-const missions: { title: string, description: string }[] = [
+export const missions: { title: string, description: string }[] = [
   {
     title: "Delivering Quality Shipping Solutions ",
     description: "Our mission is to provide reliable, efficient and cost-effective shipping solutions to our customers. We strive to provide the best customer service, innovative solutions and superior performance to ensure that our customers’ needs are met."
@@ -215,7 +217,7 @@ type ListInfoItemProps = {
   className?: string
 }
 
-const ListInfoItem = (props: ListInfoItemProps) => {
+export const ListInfoItem = (props: ListInfoItemProps) => {
   return (
     <div className={'laptop:p-6 mobile:py-2 flex flex-col laptop:gap-y-4 mobile:gap-y-2' + " " + props.className}>
       <div className='flex flex-row laptop:gap-x-6 mobile:gap-x-1 laptop:items-start mobile:items-start'>
@@ -232,52 +234,3 @@ const ListInfoItem = (props: ListInfoItemProps) => {
 
 export default HomePage
 
-const ContactUsSection = () => {
-  return (
-    <section className='laptop:py-10 mobile:py-6 bg-blue-500'>
-      <Container className='flex laptop:flex-row mobile:flex-col items-center justify-between mobile:gap-y-4'>
-        <h1 className='text-white laptop:text-5xl mobile:text-2xl font-medium'>
-          Want to know more...?
-        </h1>
-        <a href="/contact">
-          <Button variant='tarsier'>
-            Contact Us
-          </Button>
-        </a>
-      </Container>
-    </section>
-  )
-};
-
-const FooterSection = () => {
-  const menus = [
-    {
-      title: 'Home',
-      link: '/'
-    },
-    {
-      title: 'About Us',
-      link: '/about'
-    },
-    {
-      title: 'Services',
-      link: '/service'
-    },
-    {
-      title: 'Contact Us',
-      link: '/contact'
-    }
-  ]
-  return (
-    <footer className='py-10'>
-      <Container className='flex laptop:flex-row mobile:flex-col-reverse justify-between mobile:gap-y-4'>
-        <ul className='text-white flex flex-col laptop:gap-y-2 mobile:gap-y-1'>{menus.map((e, i) => <a key={i} href={e.link}><li>{e.title}</li></a>)}</ul>
-        <div className='laptop:self-end'>
-          <a className='text-white text-xl font-medium' href='/'>
-            Kim Sell.
-          </a>
-        </div>
-      </Container>
-    </footer>
-  )
-}
