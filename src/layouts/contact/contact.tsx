@@ -43,7 +43,7 @@ const Comp = () => {
   return (
     <Container>
 
-      <div className="mobile:pt-10 flex items-top justify-center min-h-screen bg-white dark:bg-black sm:items-center sm:pt-0">
+      <div className="mobile:pt-10 flex items-top justify-center min-h-screen bg-black dark:bg-black sm:items-center sm:pt-0">
         <div className=" mx-auto">
           <div className="mt-8 overflow-hidden">
             <div className="laptop:py-6 mr-2  sm:rounded-lg">
