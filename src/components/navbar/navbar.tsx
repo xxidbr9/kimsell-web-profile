@@ -100,7 +100,7 @@ const Navbar: React.FC<Props> = (props) => {
       )}
 
       {isMenuOpen && (
-        <div className='w-full h-screen filter backdrop-blur-lg z-40'/>
+        <div className='w-full h-screen filter backdrop-blur-lg z-40' />
       )}
 
 
@@ -108,7 +108,7 @@ const Navbar: React.FC<Props> = (props) => {
       <Container>
         <div className='mobile:hidden laptop:flex justify-between items-center py-6'>
           <a className='text-white text-xl font-medium' href='/'>
-            Kim Sell.
+            PT. Kimsell.
           </a>
           <ul className='flex justify-center items-center gap-10'>
             {menu.map((item, index) => (
