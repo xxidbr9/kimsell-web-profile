@@ -47,7 +47,7 @@ const Comp = () => {
         <div className=" mx-auto">
           <div className="mt-8 overflow-hidden">
             <div className="laptop:py-6 mr-2  sm:rounded-lg">
-              <h1 className="text-4xl sm:text-5xl text-gray-800 dark:text-white font-bold tracking-tight">
+              <h1 className="text-4xl sm:text-5xl text-white font-bold tracking-tight">
                 Get in touch
               </h1>
               <p className="text-base font-medium text-white dark:text-white mt-2">
